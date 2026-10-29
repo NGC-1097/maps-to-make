@@ -1,4 +1,4 @@
-# Maps you can make
+# Maps to make
 
 Python notebooks that turn world data into files for a laser cutter or a 3D printer. Each project starts from a map or a drawing and ends with cut files (SVG, PDF) or print files (STL) that are ready to load.
 
@@ -25,6 +25,7 @@ All code is documented with Doxygen-style docstrings (`"""!` with `@brief`, `@pa
 ├── data/
 │   └── ne_50m_land.geojson       # Natural Earth land polygons (public domain)
 ├── docs/images/                  # previews used in this README
+├── LICENSE
 ├── requirements.txt
 └── README.md
 ```
@@ -32,8 +33,8 @@ All code is documented with Doxygen-style docstrings (`"""!` with `@brief`, `@pa
 ## Setup
 
 ```bash
-git clone https://github.com/<your-user>/<this-repo>.git
-cd <this-repo>
+git clone https://github.com/NGC-1097/maps-to-make.git
+cd maps-to-make
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 jupyter lab
@@ -267,3 +268,7 @@ The HTML ends up in `html/` and can be published with GitHub Pages.
 
 * Land polygons from [Natural Earth](https://www.naturalearthdata.com), public domain.
 * Light pollution tiles from [lightpollutionmap.app](https://lightpollutionmap.app). They are downloaded at run time and not stored in this repository.
+
+## License
+
+Code is released under the [MIT License](LICENSE). Third-party data keeps its own terms, see above.
