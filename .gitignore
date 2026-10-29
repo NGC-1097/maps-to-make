@@ -1,0 +1,16 @@
+# generated output
+*/laser_layers_world/
+*/flat_spiral_parts/
+*/spiral_parts/
+*/sheet*_*disc_*.svg
+build/
+html/
+Doxyfile.bak
+
+# cached third-party tiles (check lightpollutionmap.app terms before sharing)
+lp_world.png
+
+# notebook and Python clutter
+.ipynb_checkpoints/
+__pycache__/
+.venv/
