@@ -4,8 +4,6 @@
 */spiral_parts/
 */sheet*_*disc_*.svg
 build/
-html/
-Doxyfile.bak
 
 # cached third-party tiles (check lightpollutionmap.app terms before sharing)
 lp_world.png

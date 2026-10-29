@@ -8,8 +8,6 @@ Python notebooks that turn world data into files for a laser cutter or a 3D prin
 | [Spiral map](#2-spiral-map) | A hanging spiral strip carrying a world map | 3D printer, 2 colours | STL |
 | [Disc hole ring](#3-disc-hole-ring) | Discs with a ring of crochet holes, packed on sheets | Laser cutter | SVG |
 
-All code is documented with Doxygen-style docstrings (`"""!` with `@brief`, `@param`, `@return`), see [Documentation](#documentation).
-
 ---
 
 ## Repository layout
@@ -250,19 +248,6 @@ return nearest - R_HOLE, gap_rim
 * 1 mm holes in Vivak can close slightly from heat. Test one cut first.
 
 ---
-
-## Documentation
-
-Docstrings use Doxygen syntax. Doxygen cannot read `.ipynb` files, so export the notebooks to Python first.
-
-```bash
-jupyter nbconvert --to script */*.ipynb --output-dir build/py
-doxygen -g Doxyfile
-# in Doxyfile set:  INPUT = build/py   FILE_PATTERNS = *.py   OPTIMIZE_OUTPUT_JAVA = YES
-doxygen Doxyfile
-```
-
-The HTML ends up in `html/` and can be published with GitHub Pages.
 
 ## Data and credits
 
